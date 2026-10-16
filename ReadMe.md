@@ -9,7 +9,7 @@ Instant dev tools for your current shell
 ```bash
 $ node --version
 Command 'node' not found
-$ source <(curl -sL in-1.cc) rust node
+$ source <(curl -sL https://in-1.cc) rust node
 $ node --version
 v26.8.1
 $ cargo --version
@@ -19,13 +19,13 @@ cargo 1.98.0
 From fish:
 
 ```fish
-curl -sL in-1.cc | source - rust node
+curl -sL https://in-1.cc | source - rust node
 ```
 
 For silent use in a script:
 
 ```bash
-source <(curl -sL in-1.cc) -q rust node
+source <(curl -sL https://in-1.cc) -q rust node
 ```
 
 
@@ -61,8 +61,8 @@ Requirements: `git`, `curl`, GNU `make` and `bash`.
 in-1 is itself one of the tools, so the one-liner installs it too:
 
 ```bash
-source <(curl -sL in-1.cc) in-1      # bash / zsh
-curl -sL in-1.cc | source - in-1     # fish
+source <(curl -sL https://in-1.cc) in-1      # bash / zsh
+curl -sL https://in-1.cc | source - in-1     # fish
 ```
 
 That gives you the `in-1` command, its man page and tab completion in
